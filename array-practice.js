@@ -1,12 +1,23 @@
 
-
 let persons = [
-    "Doğukan",
-    "Hakan",
-    "Şeyda",
-    "Tuğçe",
-    "Selami"
+    {
+        name: "Doğukan",
+        surname: "Ateş",
+    },
+    {
+        name: "Berna",
+        surname: "Yıldırm",
+    },
+    {
+        name: "Ahmet",
+        surname: "Hacı",
+    },
+    {
+        name: "Hüseyin",
+        surname: "Demir",
+    }
 ];
 
+let personsNames = persons.map(  item => item.surname);
 
-document.write(persons);
+console.log(personsNames)
