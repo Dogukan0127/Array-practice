@@ -50,16 +50,27 @@ console.log(personsNames);
 
 
 
-let numbersss = "selamlar";
-let typeoff = numbersss.typeof();
-
+let numbersss = "a";
 if(numbersss > 20 ){
     console.log( "sayınız 20'den büyük.");
 }else if(numbersss < 20){
     console.log( "sayınız 20'den küçük.");
 }else if(numbersss != 20){
-    
-    if (numbersss == String ){
+    function typeChecker(){
+        let tpyew = typeof(numbersss);
+        if(tpyew  == String){
+            console.log("bu sayı değil ama da")
+        }
+    }
+    typeChecker();
+}else{
+    console.log( "Hata");
+}
+
+
+
+/*
+if (numbersss != Number ){
         console.log( "Degeriniz bir sayı değildir");
 
     }else if(numbersss == undefined){
@@ -68,7 +79,4 @@ if(numbersss > 20 ){
     }else{
         console.log( "Sayınız geçersizdir");
     }
-
-}else{
-    console.log( "Hata");
-}
+*/ 
