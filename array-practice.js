@@ -50,8 +50,8 @@ console.log(personsNames);
 
 
 
-let numbersss = "ab";
-
+let numbersss = "selamlar";
+let typeoff = numbersss.typeof();
 
 if(numbersss > 20 ){
     console.log( "sayınız 20'den büyük.");
@@ -59,16 +59,13 @@ if(numbersss > 20 ){
     console.log( "sayınız 20'den küçük.");
 }else if(numbersss != 20){
     
-    if (numbersss != Number ){
+    if (numbersss == String ){
         console.log( "Degeriniz bir sayı değildir");
 
     }else if(numbersss == undefined){
         console.log("Değer bulunamadı.");
 
-    }else if(numbersss == null){
-        console.log("Değer bulunamadı.");
-    }
-    else{
+    }else{
         console.log( "Sayınız geçersizdir");
     }
 
