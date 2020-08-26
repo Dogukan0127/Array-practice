@@ -50,33 +50,27 @@ console.log(personsNames);
 
 
 
-let numbersss = "a";
+let numbersss = null;
+
 if(numbersss > 20 ){
     console.log( "sayınız 20'den büyük.");
 }else if(numbersss < 20){
     console.log( "sayınız 20'den küçük.");
 }else if(numbersss != 20){
-    function typeChecker(){
-        let tpyew = typeof(numbersss);
-        if(tpyew  == String){
-            console.log("bu sayı değil ama da")
-        }
+    if (typeof numbersss === "string"){
+        console.log( "Degeriniz bir sayı değildir");
+
+    }else if(typeof numbersss == "undefined"){
+        console.log("Değer bulunamadı.");
     }
-    typeChecker();
+    else if(typeof numbersss === "null"){
+        console.log("Değer bulunamadı.");
+    }else{
+        console.log( "Sayınız geçersizdir");
+    }
 }else{
-    console.log( "Hata");
+        console.log( "Hata");
 }
 
 
 
-/*
-if (numbersss != Number ){
-        console.log( "Degeriniz bir sayı değildir");
-
-    }else if(numbersss == undefined){
-        console.log("Değer bulunamadı.");
-
-    }else{
-        console.log( "Sayınız geçersizdir");
-    }
-*/ 
