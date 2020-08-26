@@ -51,25 +51,24 @@ console.log(personsNames);
 
 
 let degerbır = null;
-
-if(degerbır > 20 ){
+let degertype = typeof degerbır;
+console.log(degertype);
+if( degertype === "number" && degerbır > 20 ){
     console.log( "sayınız 20'den büyük.");
-}else if(degerbır < 20){
+}else if(degertype === "number" && degerbır < 20){
     console.log( "sayınız 20'den küçük.");
-}else if(degerbır != 20){
-    if (typeof degerbır === "string"){
+}else{
+    if (degertype === "string"){
         console.log( "Degeriniz bir sayı değildir");
 
-    }else if(typeof degerbır == "undefined"){
+    }else if(degertype == "undefined"){
         console.log("Değer bulunamadı.");
     }
-    else if(typeof degerbır === "null"){
-        console.log("Değer bulunamadı.");
+    else if(degertype === "object"){
+        console.log("Değer bir obje");
     }else{
         console.log( "Sayınız geçersizdir");
     }
-}else{
-        console.log( "Hata");
 }
 
 
