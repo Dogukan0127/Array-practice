@@ -50,20 +50,20 @@ console.log(personsNames);
 
 
 
-let numbersss = null;
+let degerbır = null;
 
-if(numbersss > 20 ){
+if(degerbır > 20 ){
     console.log( "sayınız 20'den büyük.");
-}else if(numbersss < 20){
+}else if(degerbır < 20){
     console.log( "sayınız 20'den küçük.");
-}else if(numbersss != 20){
-    if (typeof numbersss === "string"){
+}else if(degerbır != 20){
+    if (typeof degerbır === "string"){
         console.log( "Degeriniz bir sayı değildir");
 
-    }else if(typeof numbersss == "undefined"){
+    }else if(typeof degerbır == "undefined"){
         console.log("Değer bulunamadı.");
     }
-    else if(typeof numbersss === "null"){
+    else if(typeof degerbır === "null"){
         console.log("Değer bulunamadı.");
     }else{
         console.log( "Sayınız geçersizdir");
